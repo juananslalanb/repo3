@@ -61,4 +61,4 @@ Imagina un algoritmo sencillo para saber si un número ingresado por el usuario 
 * **No cruzar líneas:** Utiliza los conectores circulares si el diagrama es muy extenso para evitar que las flechas se crucen y creen un enredo visual (*espagueti*).
 * **Unicidad:** Cada símbolo de decisión debe tener salidas claramente identificadas para no dejar caminos ambiguos.
 
-![image1](./DIAGRMA DE FLUJO DE JUAN.drawio.png)
+
