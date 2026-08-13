@@ -134,6 +134,11 @@
 
 ---
 
+
+
+
+<img width="602" height="902" alt="imagen2" src="https://github.com/user-attachments/assets/e3761dcd-e37f-4eb5-bd6d-0440d1d63f88" />
+
 # 🧩 Ejercicios de Práctica
 
 ---
@@ -178,6 +183,7 @@
 | Ancho      | Medida del ancho del acuario      | Entero   | cm         |
 
 
+<img width="682" height="1242" alt="imagen3" src="https://github.com/user-attachments/assets/0ffbd601-9174-41c8-8d10-51382c3c1897" />
 
 
 
@@ -193,7 +199,7 @@
 
 ---
 
-## 🟩 Ejercicio 2
+## 🟩 Ejercicio 4
 
 ### ✏️ Compra de Lápices
 
@@ -241,7 +247,14 @@
 
 ---
 
-## 🟩 Ejercicio 3
+
+
+
+
+
+<img width="531" height="892" alt="ejercicio4" src="https://github.com/user-attachments/assets/ee2e3c3e-8882-4be7-b978-91fbc5cfd0fd" />
+
+## 🟩 Ejercicio 5
 
 ### 👕 Descuento en Almacén de Ropa
 
