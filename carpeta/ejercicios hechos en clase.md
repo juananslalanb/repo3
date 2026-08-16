@@ -305,7 +305,7 @@
 
 ---
 
-## 🟩 Ejercicio 4
+## 🟩 Ejercicio 6
 
 ### 🚌 Viaje de Estudios
 
@@ -351,6 +351,182 @@
 
 
 
+
+# 🚌 Ejercicio 4 — Viaje de Estudios
+
+### 📝 Problema
+
+El director de una escuela necesita determinar cuánto debe pagar cada alumno por un viaje de estudios y cuánto se debe pagar en total a la compañía de viajes.
+
+El costo depende de la cantidad de alumnos:
+
+* **100 alumnos o más:** $65 por alumno.
+* **De 50 a 99 alumnos:** $70 por alumno.
+* **De 30 a 49 alumnos:** $95 por alumno.
+* **Menos de 30 alumnos:** el autobús cuesta $4.000 en total, por lo que se divide entre todos los alumnos.
+
+
+<img width="730" height="1092" alt="ejercicio6" src="https://github.com/user-attachments/assets/0f4f3286-351c-4d55-9bfd-1b35985726d8" />
+
+
+Taller
+
+  
+### 💻 Algoritmo en PSeInt
+
+```text
+Algoritmo ViajeDeEstudios
+
+    Definir N Como Entero
+    Definir CxA, CostoTotal Como Real
+
+    Imprimir "Ingrese la cantidad de alumnos:"
+    Leer N
+
+    Si N >= 100 Entonces
+        CxA <- 65
+        CostoTotal <- N * CxA
+    Sino
+        Si N >= 50 Entonces
+            CxA <- 70
+            CostoTotal <- N * CxA
+        Sino
+            Si N >= 30 Entonces
+                CxA <- 95
+                CostoTotal <- N * CxA
+            Sino
+                CostoTotal <- 4000
+                CxA <- CostoTotal / N
+            FinSi
+        FinSi
+    FinSi
+
+    Imprimir "Costo por alumno: $", CxA
+    Imprimir "Costo total del viaje: $", CostoTotal
+
+FinAlgoritmo
+```
+
+### 📥 Datos de Entrada
+
+| Nombre | Definición        | Tipo   | Unidad  |
+| ------ | ----------------- | ------ | ------- |
+| N      | Número de alumnos | Entero | Alumnos |
+
+### 📤 Datos de Salida
+
+| Nombre     | Definición            | Tipo | Unidad |
+| ---------- | --------------------- | ---- | ------ |
+| CxA        | Costo por alumno      | Real | $      |
+| CostoTotal | Costo total del viaje | Real | $      |
+
+> **Nota:** En el caso de menos de 30 alumnos, el costo total siempre será **$4.000**, mientras que el costo individual se obtiene dividiendo $4.000 entre la cantidad de alumnos.
+
+---
+
+# 🛩️ Ejercicio con Condicionales
+
+## Verificación de peso de despegue
+
+### 📝 Planteamiento
+
+El sistema debe verificar si el peso total de una aeronave supera el límite máximo permitido para el despegue.
+
+### 💻 Algoritmo en PSeInt
+
+```text
+Algoritmo VerificacionPesoDespegue
+
+    Definir pesoTotal, limiteMaximo Como Real
+
+    Imprimir "Ingrese el peso total de la aeronave:"
+    Leer pesoTotal
+
+    Imprimir "Ingrese el límite máximo permitido para el despegue:"
+    Leer limiteMaximo
+
+    Si pesoTotal <= limiteMaximo Entonces
+        Imprimir "La aeronave está lista para despegar."
+    Sino
+        Imprimir "La aeronave supera el límite permitido."
+        Imprimir "Debe reducir carga o combustible antes de despegar."
+    FinSi
+
+FinAlgoritmo
+```
+
+### 📥 Datos de Entrada
+
+| Nombre       | Definición                | Tipo | Unidad |
+| ------------ | ------------------------- | ---- | ------ |
+| pesoTotal    | Peso total de la aeronave | Real | kg     |
+| limiteMaximo | Peso máximo permitido     | Real | kg     |
+
+### 📤 Datos de Salida
+
+| Nombre  | Definición                   | Tipo   | Unidad |
+| ------- | ---------------------------- | ------ | ------ |
+| Mensaje | Resultado de la verificación | Cadena | Texto  |
+
+---
+
+# ✈️ Ejercicio con Bucles
+
+## Registro de altitudes de vuelo
+
+### 📝 Planteamiento
+
+Un sistema debe registrar la altitud de vuelo cada 10 minutos durante una hora. Al finalizar, debe mostrar todas las mediciones registradas.
+
+### 💻 Algoritmo en PSeInt
+
+```text
+Algoritmo RegistroAltitudes
+
+    Definir altitud Como Real
+    Definir i Como Entero
+    Definir altitudes Como Real
+
+    Dimension altitudes[6]
+
+    Para i <- 1 Hasta 6 Hacer
+        Imprimir "Ingrese la altitud registrada en el minuto ", i * 10, ":"
+        Leer altitudes[i]
+    FinPara
+
+    Imprimir "----- REGISTRO DE ALTITUDES -----"
+
+    Para i <- 1 Hasta 6 Hacer
+        Imprimir "Minuto ", i * 10, ": ", altitudes[i], " metros"
+    FinPara
+
+FinAlgoritmo
+```
+
+### 📥 Datos de Entrada
+
+| Nombre    | Definición                          | Tipo | Unidad |
+| --------- | ----------------------------------- | ---- | ------ |
+| altitudes | Altitud registrada durante el vuelo | Real | Metros |
+
+### 📤 Datos de Salida
+
+| Nombre    | Definición                      | Tipo | Unidad |
+| --------- | ------------------------------- | ---- | ------ |
+| altitudes | Todas las altitudes registradas | Real | Metros |
+
+### ⏱️ Mediciones realizadas
+
+El programa solicita **6 mediciones**, correspondientes a:
+
+1. Minuto 10
+2. Minuto 20
+3. Minuto 30
+4. Minuto 40
+5. Minuto 50
+6. Minuto 60
+
+Así, el último ejercicio realmente **guarda las seis altitudes y las muestra al terminar**, cumpliendo exactamente con el planteamiento.
 
 
 
